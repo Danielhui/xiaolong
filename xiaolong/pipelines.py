@@ -8,5 +8,6 @@
 
 class XiaolongPipeline(object):
     def process_item(self, item, spider):
-        print(item)
+        self.f.write(item['href']+'/n')
+        self.f.flush()
         return item

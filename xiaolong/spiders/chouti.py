@@ -24,5 +24,7 @@ class ChoutiSpider(scrapy.Spider):
         for page_url in pages:
             page_url = "http://dig.chouti.com" + page_url
             yield Request(url = page_url, callback = self.parse)
+
+            123
             
 
